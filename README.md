@@ -1,0 +1,3 @@
+# mathEditor.register
+
+为了在jetty中运行mathEditor,本项目将mathEditor注册为一个web项目。在开发环境中与mathEditor放在一个eclipse的workspace下。
