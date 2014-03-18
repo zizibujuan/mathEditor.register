@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         point="org.eclipse.equinox.http.registry.httpcontexts">
+         <httpcontext
+            id="com.zizibujuan.drip.client.httpcontext.dojo">
+	         <resource-mapping
+	               bundle="com.zizibujuan.drip.client.editor"
+	               path="/static/dojo">
+	         </resource-mapping>
+         </httpcontext>
+         
+         <httpcontext
+            id="com.zizibujuan.drip.client.httpcontext.dijit">
+	         <resource-mapping
+	               bundle="com.zizibujuan.drip.client.editor"
+	               path="/static/dijit">
+	         </resource-mapping>
+         </httpcontext>
+         
+         <httpcontext
+            id="com.zizibujuan.drip.client.httpcontext.dojox">
+	         <resource-mapping
+	               bundle="com.zizibujuan.drip.client.editor"
+	               path="/static/dojox">
+	         </resource-mapping>
+         </httpcontext>
+         
+         <httpcontext
+            id="com.zizibujuan.drip.client.httpcontext.mathJax">
+	         <resource-mapping
+	               bundle="com.zizibujuan.drip.client.editor"
+	               path="/static/mathJax">
+	         </resource-mapping>
+         </httpcontext>
+         
+         <httpcontext
+            id="com.zizibujuan.drip.client.httpcontext.node_modules">
+	         <resource-mapping
+	               bundle="com.zizibujuan.drip.client.editor"
+	               path="/static/node_modules">
+	         </resource-mapping>
+         </httpcontext>
+    </extension>
+	<extension
+         point="org.eclipse.equinox.http.registry.resources">
+      <resource
+            alias="/dojo"
+            httpcontextId="com.zizibujuan.drip.client.httpcontext.dojo">
+      </resource>
+      <resource
+            alias="/dijit"
+            httpcontextId="com.zizibujuan.drip.client.httpcontext.dijit">
+      </resource>
+      <resource
+            alias="/dojox"
+            httpcontextId="com.zizibujuan.drip.client.httpcontext.dojox">
+      </resource>
+      <resource
+            alias="/mathJax"
+            httpcontextId="com.zizibujuan.drip.client.httpcontext.mathJax">
+      </resource>
+      <resource
+            alias="/node_modules"
+            httpcontextId="com.zizibujuan.drip.client.httpcontext.node_modules">
+      </resource>
+     </extension>
+</plugin>
